@@ -1,0 +1,25 @@
+# Association
+
+Votre patron vient de comprendre qu’il y a autre chose que l’argent dans la vie. Il souhaite que vous lui réalisiez un site web qui permettra aux personnes de s’inscrire à une association et de leur demander plus d’informations si besoin.
+
+## Instructions
+
+Créer un site en express dans un dossier `express_associations`
+
+Le site contiendra 5 pages :
+
+- La page d’accueil avec la route `/`
+    - Cette route retournera le nom de  des 3 associations
+- Les 3 pages d’associations avec la route `/associations/:name` où `name`sera : `restau-du-coeur`, `la-croix-rouge`, ou `konexio`.
+    - Cette route renverra
+        - une image
+        - le nom
+        - une description de l’association
+- La page d’administration avec la route `/admin`
+    - Cette page contiendra la liste de tous les messages importés par ordre du plus récent au plus anciens
+
+## Formulaire 1
+
+Le formulaire enregistrera les informations en post sur la route : `/form/contact` et enregistrera le message avec toutes les informations et la date d’envoi dans une variable `contacts`.
+
+Ces informations seront disponibles sur la page `/admin`
